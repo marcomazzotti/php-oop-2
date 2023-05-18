@@ -3,25 +3,11 @@
 class category
 {
   public $name;
+  public $icon;
 
-  function __construct($_name)
+  function __construct($_name, $_icon)
   {
     $this->name = $_name;
-  }
-}
-
-class dog extends category
-{
-  public function __construct($_name = "Cane")
-  {
-    $this->name = $_name;
-  }
-}
-
-class cat extends category
-{
-  public function __construct($_name = "Gatto")
-  {
-    $this->name = $_name;
+    $this->icon = $_icon;
   }
 }
