@@ -12,16 +12,16 @@ class category
 
 class dog extends category
 {
-  public function __construct()
+  public function __construct($_name = "Cane")
   {
-    parent::__construct("Cane");
+    $this->name = $_name;
   }
 }
 
 class cat extends category
 {
-  public function __construct()
+  public function __construct($_name = "Gatto")
   {
-    parent::__construct("Gatto");
+    $this->name = $_name;
   }
 }
