@@ -12,19 +12,14 @@ class product
 
   function __construct($_img, $_name, $_price, $_description, category $_category)
   {
+    if ($_price <= 0) {
+      throw new Exception("Prezzo non può essere negativo");
+    }
+
     $this->img = $_img;
     $this->name = $_name;
     $this->price = $_price;
     $this->description = $_description;
     $this->category = $_category;
   }
-
-  // public function checkPrice($price)
-  // {
-  //   if ($price <= "0") {
-  //     throw new Exception("Prezzo non valido");
-  //   } else {
-  //     $this->price = $price;
-  //   }
-  // }
 }

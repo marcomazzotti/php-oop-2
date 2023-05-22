@@ -18,7 +18,7 @@ require_once __DIR__ . "/data.php";
 
 <body>
   <div class="container">
-    <h1 class="text-center">Pet Shop</h1>
+    <h1 class="text-center my-4">Pet Shop</h1>
     <hr>
     <div class="row">
       <?php foreach ($products as $product) { ?>
@@ -29,7 +29,9 @@ require_once __DIR__ . "/data.php";
               <h5 class="card-title"><?php echo $product->name ?></h5>
               <p class="card-text">Descrizione: <br> <?php echo $product->description ?></p>
               <p class="card-text">Prezzo: € <?php echo $product->price ?></p>
-              <p class="card-text">Categoria: <?php echo $product->category->name ?><i class="<?php echo $product->category->icon ?> ms-1"></i></p>
+              <p class="card-text">Categoria: <?php echo $product->category->name ?>
+                <i class="<?php echo $product->category->icon ?> ms-1"></i>
+              </p>
             </div>
           </div>
         </div>
